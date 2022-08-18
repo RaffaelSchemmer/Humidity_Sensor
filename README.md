@@ -18,29 +18,28 @@ In this GitHub repository, you will find a <b>complete application</b> (full-sta
 
 ## :rocket: About the Application Architecture and Technologies
 <div align="justify">
-The architecture of application was developed to running in three different types of machines and applications. 1️⃣ First machine, are responsible to make a sell. In this machine, we running a Delphi / VCL Windows application. This application implements two complete CRUDs. One, to make a login in the system and two, to make a ticket sell. All the operation of this CRUDs are made using 3 web services (that store DBMS). One WS is related to login. Other WSs are responsible to return some information about the festivity and to receive the data about the selling. This data contains the information about the customer like name/e-mail and others. The aplication are responsible to send a e-mail to customer, that contains a QR-Code ticket of purchase. Our application are security guarantee that all data are encrypted, both in transmission of data as in database storing. 2️⃣ In server (second machine) we have the 5 web services (write in PHP) that response about login, about the festivity and to allow the register a purchase. All this information are stored in a MySQL DBMS. Both Delphi and PHP using the user / password mechanisms guarantee that only the votation machine access the database of votation. The last application 3️⃣ of architecture, is a Delphi/FMX responsible android mobile application that implement two complete CRUDs. One, to make a login in the system and two, to authenticate a ticket. All the operation of this CRUDs are made using 2 web services (that store DBMS). One WS is related to login. Other WSs are responsible to receive a SHA string and to validate that this string is active (nobody uses the QR Ticket) or is inative (somebody uses the QR Ticket one time). If ticket is active, WS turn this ticket inative (put false in DMBS) and return true and the mobile application informs the screen GREEN that allow user to pass. Else, WS turn +1 ocurrence of cheat and return false and the mobile application informs the screen RED that not allow user to pass.
+The architecture of application was developed to running in three different types of machines and applications. 1️⃣ First machine, are responsible to the camp sensoring that measure the soil and the atmosphere. In this machine, we running a C/Arduino application. This application sensoring Yl-69 and DHT-11 and send and information using RF 433MHz. 2️⃣ In the other hand (second machine), we have the base sensoring that receive the data of camp and send data to the server. In this machine, we running a C/Arduino application. This application send this data using a serial/usb cable to the server. In the server, we running a python code that read serial port and write the information in a MySQL database. The last application 3️⃣ of architecture, is a web system write using html/css and javascript, running based in express web server. This application allow that all information available in database, can be used by user. This application have a complete CRUD that allow the creation of users and syncronization the data of boards/sensor to individual farms.
 </div>
 
 ## ✅ Requirements to Installing the Application
 <div align="justify">
-In Delphi/VCL application, user need to configure the IPv4, user and password (in source code). This files are availabled in the folder src of project. Remember to recompile the EXE file after this changes. Note that EXE file (only running in windows machines) will read this informations, to call the web service. In the server side you need to run a http service with PHP and a MySQL Server. Remember to import the database.sql of database folder (that create all tables to DB) and to put login.php, insereIngresso.php and consultaIngresso.php in www folder of http service. Lastly, modify the admin and password variables of PHP to match of default user and password defines in MySQL server.
+In Arduino/C, user need to configure the camp board to syncronize to base board. Than, the python server code need to be configured to receive data of base board. The files of arduino boards and the server are availabled in the folder Sensores. 
+ In the server side you need to run a http service with NODEJS and a MySQL Server.
 </div>
 
 ## 💻 Requirements to Running the Application
 
+- Arduino Camp and Base
 - Server with Linux like Ubuntu Server 20.04 LTS
 - Server with IPv4 static in Internet
-- Server that running Http Web Services (NGINX)
+- Server that running Http Web Services (NodeJS/Express)
+- Server that running Python Services
 - Server running Mysql Services
-- Server with Php 5 or Later (7 is the best)
 - Computer with Windows Xp or Later
-- Mobile cellphone with Android or iOS
 
 ## ❤️ Community and Contributions to Future Work
 <div align="justify">
-Our major dreaming of this project, is that the community uses this magic tool to monitoring soil and atmosferic parameters, to make 
-
-selling more (whatever kind of product you sell), like we achieved when we developing and apply our study case. But, we are open to new ideas to grow this project to the next level. With future work, that you can implement, we suggest a mobile version of Delphi (using FMX) of selling application. This will allow that every people of sales team, can sell using your cellphone.
+Our major dreaming of this project, is that the community uses this magic tool to monitoring soil and atmosferic parameters, to to plant and harvest better greens and vegetables, like we achieved when we developing and apply our study case. But, we are open to new ideas to grow this project to the next level. With future work, that you can implement, we suggest a native mobile version of this application. This will allow that every people of farm team, can manage the system using your cellphone.
 </div>
 
 ## 📫 Have a question? Want to chat? Ran into a problem?
