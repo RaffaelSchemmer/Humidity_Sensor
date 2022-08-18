@@ -1,8 +1,8 @@
-<img alt="GoStack" src="https://github.com/RaffaelSchemmer/SistemaVendasBistroCetec/blob/master/ticket.gif" />
+<img alt="GoStack" src="https://github.com/RaffaelSchemmer/Humidity_Sensor/blob/main/humidity.gif" />
 
 <div align="center">
   <h2>
-    Ticket Sales and Entrance Mananging System Using QR Code and Cloud Computing
+    System for Measuring and Monitoring Soil Moisture, Temperature and Atmospheric Moisture Parameters
   </h2>
   <h4>
     :star: Star us on GitHub — it helps!
@@ -13,7 +13,7 @@
 
 ## 🧿 About the Application Purpose
 <div align="justify">
-In this GitHub repository, you will find a <b>complete parametrizable application</b> (full-stack and multiple technology) that allow managing ticket sales and entrance mananging, using QR Code and a camera of a mobile. This application was developed :bulb:, to the CETEC 2019 Bistro Event, that happened in august of 2019 📅 in Flores da Cunha, RS in Brazil. 
+In this GitHub repository, you will find a <b>complete application</b> (full-stack and multiple technology) that allow measure and monitoring soil moisture, temperature and moisture atmospheric, using Arduino sensors. This application was developed :bulb:, to the integrative project of the student Gustavo Chimenes Dias, that happened during 2020 and 2021 📅 in Camboriú, SC in Brazil. 
 </div>
 
 ## :rocket: About the Application Architecture and Technologies
@@ -38,7 +38,9 @@ In Delphi/VCL application, user need to configure the IPv4, user and password (i
 
 ## ❤️ Community and Contributions to Future Work
 <div align="justify">
-Our major dreaming of this project, is that the community uses this magic tool to selling more (whatever kind of product you sell), like we achieved when we developing and apply our study case. But, we are open to new ideas to grow this project to the next level. With future work, that you can implement, we suggest a mobile version of Delphi (using FMX) of selling application. This will allow that every people of sales team, can sell using your cellphone.
+Our major dreaming of this project, is that the community uses this magic tool to monitoring soil and atmosferic parameters, to make 
+
+selling more (whatever kind of product you sell), like we achieved when we developing and apply our study case. But, we are open to new ideas to grow this project to the next level. With future work, that you can implement, we suggest a mobile version of Delphi (using FMX) of selling application. This will allow that every people of sales team, can sell using your cellphone.
 </div>
 
 ## 📫 Have a question? Want to chat? Ran into a problem?
