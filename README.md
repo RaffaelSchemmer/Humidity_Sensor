@@ -24,7 +24,7 @@ The architecture of application was developed to running in three different type
 ## ✅ Requirements to Installing the Application
 <div align="justify">
 In Arduino/C, user need to configure the camp board to syncronize to base board. Than, the python server code need to be configured to receive data of base board. The files of arduino boards and the server are availabled in the folder Sensores. 
- In the server side you need to run a http service with NODEJS and a MySQL Server.
+ In the server side you need to run a http service with NodeJS and a MySQL Server. The files of web server are availabled in the folder Servidor.
 </div>
 
 ## 💻 Requirements to Running the Application
